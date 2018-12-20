@@ -1,0 +1,415 @@
+<!DOCTYPE=HTML>
+
+<html>
+
+<head>
+	
+	<link rel="stylesheet" href="style.css"/>
+	
+	<title>OSRS Group Finder - Bosses, Raids, and Minigames</title>
+
+</head>
+
+<body>
+
+	<div id="headerbar">
+
+		<div id="title">
+			<h1>OSRS Group Finder</h1>
+		</div>
+			
+		<div id="nav">
+			<div id="nav-wrap">
+				<ul class="nav-list">
+					<li><a class="nav-button">Home</a></li><li><a class="nav-button">Whitelist</a></li><li><a class="nav-button">Rules</a></li><li><a class="nav-button">Help</a></li><li><a class="nav-button">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+		
+	<div id="wrapper">
+		
+		<div id="scroll-top"></div>
+		
+		<div id="scroll-center">
+		
+			<div id="description">
+			
+				<h2>Welcome Adventurer!</h2>
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer diam orci, ultricies sit amet scelerisque at, vulputate sed erat. Nullam sed lorem id massa commodo sagittis vel ac ipsum. Quisque sagittis ut odio vitae pellentesque. Nunc eget tincidunt mi, nec bibendum tellus. Nunc lobortis tincidunt semper. Curabitur ultrices odio lectus, non porttitor purus auctor eget. Aenean efficitur tincidunt justo commodo iaculis.<br/><br/>Praesent sit amet auctor urna, sit amet aliquet massa. Proin a tortor et lacus porttitor ultrices eu at velit. In urna nibh, posuere at nibh eget, ultrices tincidunt lacus.<br/><br/>Suspendisse ac urna eget dolor congue egestas. Sed vel faucibus nisl. Nulla vehicula tellus sem, ornare facilisis mi mollis ac. Quisque in quam vitae enim malesuada sodales. Maecenas fringilla neque risus, non auctor lectus congue vel. Nullam sit amet fringilla urna, at aliquet metus. Ut vitae consectetur nibh, eleifend rhoncus ipsum. Aliquam sit amet ex tellus. Fusce fermentum turpis tellus, et posuere urna cursus eu.  Nullam sed lorem id massa commodo sagittis vel ac ipsum. Quisque sagittis ut odio vitae pellentesque. Nunc eget tincidunt mi, nec bibendum tellus. Nunc lobortis tincidunt semper. Curabitur ultrices odio lectus, non porttitor purus auctor eget. Aenean efficitur tincidunt justo commodo iaculis.<br/><br/>Suspendisse ac urna eget dolor congue egestas. Sed vel faucibus nisl. Nulla vehicula tellus sem, ornare facilisis mi mollis ac. Quisque in quam vitae enim malesuada sodales. Maecenas fringilla neque risus, non auctor lectus congue vel.</p>
+			
+			</div>
+			
+			<div class="section-line"></div>
+			
+			<div id="controls">
+			
+				<h2>Create Group</h2>
+				
+				<div id="controls-main">
+				
+					<input type="button" value="Raids" id="raidsBtn" onclick="raidsFunction()"/><input type="button" value="Bosses" id="bossingBtn" onclick="bossingFunction()"/><input type="button" value="Minigames" id="minigamesBtn" onclick="minigamesFunction()"/>
+					
+				</div>
+					
+				<div id="controls-raids">
+					
+					<div class="activity-name">
+						<p>Raid:&nbsp;</p>
+						<select>
+							<option value="0">Paradigm of Exodus</option>
+							<option value="1">Theatre of Blood</option>
+						</select>
+					</div>
+						
+					<div class="activity-left">
+						<div class="left-top-two">
+							<p>Number of Players</p>
+							<input type="text" title="Numbers 1-100 or 'Any'" placeholder="1-100/'Any'"/>
+						</div>
+						<div class="left-bottom-two">
+							<p>Team Message</p>
+							<input type="text" title="'110+ Combat', 'Need rangers', 'Experienced team', etc." placeholder="'110+', 'Need rangers', etc."/>
+						</div>
+					</div>
+						
+					<div class="activity-mid">
+						<div class="mid-top">
+							<p>Region</p>
+							<select>
+								<option value="0">North America</option>
+								<option value="1">South America</option>
+								<option value="2">Africa</option>
+								<option value="3">Europe</option>
+								<option value="4">Asia</option>
+								<option value="5">Australia</option>
+							</select>
+						</div>
+						<div class="mid-bottom">
+							<p>Start Time</p>
+							<input type="text" title="'7:30 PM EST'" placeholder="Include time zone"/>
+							<div class="spacer"></div>
+							<p>End Time</p>
+							<input type="text" title="'11:00 PM EST'" placeholder="Include time zone"/>
+						</div>
+					</div>
+						
+					<div class="activity-right">
+						<div class="right-top-world">
+							<p>Starting World</p>
+							<input type="text" title="'354'" placeholder="E.g.: '354'"/>
+						</div>
+						<div class="right-bottom">
+							<p>Clan Chat Channel</p>
+							<input type="text" placeholder="Channel Name"/>
+						</div>
+					</div>
+						
+					<div id="cancel-submit">
+						<input type="button" value="Cancel" class="cancelBtn" onclick="cancelFunction()"/><input type="button" value="Submit" class="submitBtn"/>
+					</div>
+					
+				</div>
+				
+				<div id="controls-bossing">
+					
+					<div class="activity-name">
+						<p>Boss:&nbsp;</p>
+						<select>
+							<option value="0">Callisto</option>
+							<option value="1">Chaos Elemental</option>
+							<option value="2">Chaos Fanatic</option>
+							<option value="3">Commander Zilyana</option>
+							<option value="4">Corporeal Beast</option>
+							<option value="5">Crazy Archeologist</option>
+							<option value="6">Dagannoth Kings</option>
+							<option value="7">General Graardor</option>
+							<option value="8">Giant Mole</option>
+							<option value="9">K&#39;ril Tsutsaroth</option>
+							<option value="10">Kalphite Queen</option>
+							<option value="11">King Black Dragon</option>
+							<option value="12">Kree&#39;arra</option>
+							<option value="13">Scorpia</option>
+							<option value="14">Venenatis</option>
+							<option value="15">Vet&#39;ion</option>
+							<option value="16">Wintertodt</option>
+						</select>
+					</div>
+						
+					<div class="activity-left">
+						<div class="left-top-three">
+							<p>Split Type</p>
+							<select>
+								<option value="0">Even</option>
+								<option value="1">FFA</option>
+							</select>
+							<div class="spacer"></div>
+							<p>Number of Players</p>
+							<input type="text" title="Numbers 1-10 or 'Any'" placeholder="1-10/'Any'"/>
+						</div>
+						<div class="left-bottom-three">
+							<p>Team Message</p>
+							<input type="text" title="'90+ Range', 'Need tank', 'Need DPS', etc." placeholder="'Lvl 90+', 'Need tank', etc."/>
+						</div>
+					</div>
+						
+					<div class="activity-mid">
+						<div class="mid-top">
+							<p>Region</p>
+							<select>
+								<option value="0">North America</option>
+								<option value="1">South America</option>
+								<option value="2">Africa</option>
+								<option value="3">Europe</option>
+								<option value="4">Asia</option>
+								<option value="5">Australia</option>
+							</select>
+						</div>
+						<div class="mid-bottom">
+							<p>Start Time</p>
+							<input type="text" title="'7:30 PM EST'" placeholder="Include time zone"/>
+							<div class="spacer"></div>
+							<p>End Time</p>
+							<input type="text" title="'11:00 PM EST'" placeholder="Include time zone"/>
+						</div>
+					</div>
+						
+					<div class="activity-right">
+						<div class="right-top-world">
+							<p>Starting World</p>
+							<input type="text" title="'354'" placeholder="E.g.: '354'"/>
+						</div>
+						<div class="right-bottom">
+							<p>Clan Chat Channel</p>
+							<input type="text" placeholder="Channel Name"/>
+						</div>
+					</div>
+						
+					<div id="cancel-submit">
+						<input type="button" value="Cancel" class="cancelBtn" onclick="cancelFunction()"/><input type="button" value="Submit" class="submitBtn"/>
+					</div>
+					
+				</div>
+					
+				<div id="controls-minigames">
+					
+					<div class="activity-name">
+						<p>Minigame:&nbsp;</p>
+						<select>
+							<option value="0">Barbarian Assault</option>
+							<option value="1">Blast Furnace</option>
+							<option value="2">Burthorpe Games Room</option>
+							<option value="3">Castle Wars</option>
+							<option value="4">Fishing Trawler</option>
+							<option value="5">Last Man Standing</option>
+							<option value="6">Nightmare Zone</option>
+							<option value="7">Pest Control</option>
+							<option value="8">Rat Pits</option>
+							<option value="9">Shades of Mort&#39;ton</option>
+							<option value="10">Trouble Brewing</option>
+							<option value="11">TzHaar Fight Pit</option>
+						</select>
+					</div>
+						
+					<div class="activity-left">
+						<div class="left-top-two">
+							<p>Number of Players</p>
+							<input type="text" title="Numbers 1-100 or 'Any'" placeholder="1-100/'Any'"/>
+						</div>
+						<div class="left-bottom-two">
+							<p>Group Message</p>
+							<input type="text" title="'5v5', 'Need healer', 'Pet hunt', 'Veteran boat', etc." placeholder="'5v5', 'Need healer', etc."/>
+						</div>
+					</div>
+						
+					<div class="activity-mid">
+						<div class="mid-top">
+							<p>Region</p>
+							<select>
+								<option value="0">North America</option>
+								<option value="1">South America</option>
+								<option value="2">Africa</option>
+								<option value="3">Europe</option>
+								<option value="4">Asia</option>
+								<option value="5">Australia</option>
+							</select>
+						</div>
+						<div class="mid-bottom">
+							<p>Start Time</p>
+							<input type="text" title="'7:30 PM EST'" placeholder="Include time zone"/>
+							<div class="spacer"></div>
+							<p>End Time</p>
+							<input type="text" title="'11:00 PM EST'" placeholder="Include time zone"/>
+						</div>
+					</div>
+						
+					<div class="activity-right">
+						<div class="right-top-world">
+							<p>Starting World</p>
+							<input type="text" title="'354'" placeholder="E.g.: '354'"/>
+						</div>
+						<div class="right-bottom">
+							<p>Clan Chat Channel</p>
+							<input type="text" placeholder="Channel Name"/>
+						</div>
+					</div>
+						
+					<div id="cancel-submit">
+						<input type="button" value="Cancel" class="cancelBtn" onclick="cancelFunction()"/><input type="button" value="Submit" class="submitBtn"/>
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<div class="section-line"></div>
+			
+			<div id="groupList">
+			
+				<h2>Browse Groups</h2>
+				
+				<table>
+					<tr>
+						<th class="lg">Activity</th>
+						<th id="md">Split</th>
+						<th>Players</th>
+						<th class="lg">Message</th>
+						<th>Region</th>
+						<th class="times">Start</th>
+						<th class="times">End</th>
+						<th>World</th>
+						<th id="plyrName">Channel</th>
+					</tr>
+					<tr>
+						<td>Commander Zilyana</td>
+						<td>Even</td>
+						<td>3</td>
+						<td>90+ Range, Need DPS</td>
+						<td>NA</td>
+						<td>7:30PM<br>PST</td>
+						<td>8:30PM<br>PST</td>
+						<td>367</td>
+						<td>Lightning_tw</td>
+					</tr>
+					<tr>
+						<td>Theatre of Blood</td>
+						<td></td>
+						<td>10</td>
+						<td>Need DPS, Need tank</td>
+						<td>EU</td>
+						<td>8:00AM<br>GMT</td>
+						<td>10:00AM<br>GMT</td>
+						<td>322</td>
+						<td>NirvanaChaos</td>
+					</tr>
+					<tr>
+						<td>Corporeal Beast</td>
+						<td>FFA</td>
+						<td>4</td>
+						<td>Need DPS, 110+</td>
+						<td>AU</td>
+						<td>3:30PM<br>AWST</td>
+						<td>5:00PM<br>AWST</td>
+						<td>345</td>
+						<td>-CNG-Landon</td>
+					</tr>
+					<tr>
+						<td>Castle Wars</td>
+						<td></td>
+						<td>3</td>
+						<td>5v5, Have 7</td>
+						<td>NA</td>
+						<td>9:30PM<br>EST</td>
+						<td>12:30PM<br>EST</td>
+						<td>365</td>
+						<td>Daxir598</td>
+					</tr>
+					<tr>
+						<td>Venenatis</td>
+						<td>Even</td>
+						<td>2</td>
+						<td>90+, Bring cannon</td>
+						<td>NA</td>
+						<td>3:30PM<br>EST</td>
+						<td>5:30PM<br>EST</td>
+						<td>337</td>
+						<td>BetterThanMoe</td>
+					</tr>
+					<tr>
+						<td>Dagannoth Kings</td>
+						<td>FFA</td>
+						<td>2</td>
+						<td>105+, Bring Guthan set</td>
+						<td>NA</td>
+						<td>11:00AM<br>CST</td>
+						<td>1:00PM<br>CST</td>
+						<td>367</td>
+						<td>Elraeth3</td>
+					</tr>
+					<tr>
+						<td>General Graardor</td>
+						<td>Even</td>
+						<td>2</td>
+						<td>Need tank and DPS</td>
+						<td>EU</td>
+						<td>4:00PM<br>GMT</td>
+						<td>5:30PM<br>GMT</td>
+						<td>354</td>
+						<td>Fake111</td>
+					</tr>
+					<tr>
+						<td>Theatre of Blood</td>
+						<td></td>
+						<td>5</td>
+						<td>Need DPS, 100+</td>
+						<td>EU</td>
+						<td>7:30PM<br>CET</td>
+						<td>8:30PM<br>CET</td>
+						<td>360</td>
+						<td>ExCentriQue</td>
+					</tr>
+					<tr>
+						<td>Burthorpe Games Room</td>
+						<td></td>
+						<td>Any</td>
+						<td>Bored come play</td>
+						<td>NA</td>
+						<td>1:30PM<br>PST</td>
+						<td>3:30PM<br>PST</td>
+						<td>331</td>
+						<td>D_0_U_G</td>
+					</tr>
+					<tr>
+						<td>Scorpia</td>
+						<td>FFA</td>
+						<td>2</td>
+						<td>90+ Magic, Need DPS</td>
+						<td>NA</td>
+						<td>7:30PM<br>EST</td>
+						<td>8:30PM<br>EST</td>
+						<td>377</td>
+						<td>PaulInTheHouse</td>
+					</tr>
+				</table>
+			
+			</div>
+			
+		</div>
+		
+		<div id="scroll-bottom"></div>
+		
+	</div>
+		
+	<div id="footer">
+		
+		<a href="mailto:mayer.nathan@outlook.com"><p>Contact</p></a>
+		
+	</div>
+	
+	<script src="groupFinder.js"></script>
+
+</body>
+
+</html>
